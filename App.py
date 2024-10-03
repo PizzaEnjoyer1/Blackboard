@@ -22,6 +22,12 @@ with st.sidebar:
   
   bg_color = st.color_picker("Selecciona el color del fondo", "#FFFFFF")
 
+  if st.button("Fondo a blanco"):
+    bg_color = "#FFFFFF"
+
+  if st.button("Color de linea a negro"):
+    stroke_color = "000000"
+
  
 canvas_result = st_canvas(
     fill_color=fill_color,
