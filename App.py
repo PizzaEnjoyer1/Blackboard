@@ -8,7 +8,7 @@ with st.sidebar:
 
   drawing_mode = st.selectbox(
     "Selecciona el modo de dibujo",
-    ("freedraw", "line", "transform")
+    ("freedraw", "line", "transform", "rect", "circle")
   )
 
 
@@ -25,8 +25,8 @@ canvas_result = st_canvas(
     stroke_width=stroke_width,
     stroke_color=stroke_color,
     background_color=bg_color,
-    height=200,
-    width=200,
+    height=720,
+    width=1280,
     key="canvas",
     drawing_mode = drawing_mode
 )
