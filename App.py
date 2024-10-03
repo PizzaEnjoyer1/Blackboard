@@ -3,6 +3,7 @@ from streamlit_drawable_canvas import st_canvas
 
 
 st.title("My first canvas")
+st.write("Draw anything you want!")
 
 with st.sidebar:
 
