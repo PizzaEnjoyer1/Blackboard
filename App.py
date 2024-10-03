@@ -15,13 +15,11 @@ with st.sidebar:
 
   stroke_width = st.slider("Grosor del pincel", 1, 100, 10)
 
-  stroke_color = st.color_picker("Selecciona un color", #000000)
+  stroke_color = st.color_picker("Selecciona un color", "#000000")
   
   bg_color = st.color_picker("Enter background color", "#FFFFFF")
 
  
-
-
 canvas_result = st_canvas(
     fill_color="rgba(255, 165, 0, 0.3)",  # Fixed fill color with some opacity
     stroke_width=stroke_width,
