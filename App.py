@@ -1,8 +1,8 @@
 import streamlit as st
 from streamlit_drawable_canvas import st_canvas
 
-st.title("My first canvas")
-st.write("Draw anything you want!")
+st.title("Mi primer canvas")
+st.write("¡Dibuja lo que quieras!")
 
 with st.sidebar:
 
@@ -16,11 +16,11 @@ with st.sidebar:
 
   stroke_width = st.slider("Grosor del pincel", 1, 100, 10)
 
-  stroke_color = st.color_picker("Selecciona un color", "#000000")
+  stroke_color = st.color_picker("Selecciona el color de linea", "#000000")
 
   fill_color = st.color_picker("Selecciona el color de relleno", "#000000")
   
-  bg_color = st.color_picker("Enter background color", "#FFFFFF")
+  bg_color = st.color_picker("Selecciona el color del fondo", "#FFFFFF")
 
  
 canvas_result = st_canvas(
