@@ -17,7 +17,8 @@ with st.sidebar:
 
   stroke_color = st.color_picker("Selecciona un color")
   
-  bg_color = "FFFFFF"
+  bg_color = st.beta_color_picker("Enter background color hex: ", "#eee")
+
  
 
 
