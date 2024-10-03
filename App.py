@@ -32,5 +32,5 @@ canvas_result = st_canvas(
     drawing_mode = drawing_mode
 )
 
-if image_data is not None:
-    st.image(image_data)
+if canvas_result is not None:
+    st.image(canvas_result)
