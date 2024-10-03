@@ -24,7 +24,7 @@ with st.sidebar:
 
  
 canvas_result = st_canvas(
-    fill_color="rgba(255, 165, 0, 0.3)",
+    fill_color=fill_color,
     stroke_width=stroke_width,
     stroke_color=stroke_color,
     background_color=bg_color,
@@ -34,5 +34,3 @@ canvas_result = st_canvas(
     drawing_mode = drawing_mode,
 )
 
-if canvas_result is not None:
-    st.image(canvas_result)
